@@ -3,15 +3,15 @@
 
 #define ILI9341_DRIVER
 
-#define TFT_MISO 19  // (leave TFT SDO disconnected if other SPI devices share MISO)
-#define TFT_MOSI 23
-#define TFT_SCLK 18
+#define TFT_MISO 12  // (leave TFT SDO disconnected if other SPI devices share MISO)
+#define TFT_MOSI 13
+#define TFT_SCLK 14
 #define TFT_CS   15  // Chip select control pin
 #define TFT_DC    2  // Data Command control pin
-#define TFT_RST   4  // Reset pin (could connect to RST pin)
+#define TFT_RST   -1  // Reset pin (could connect to RST pin)
 
 // Optional touch screen chip select
-//#define TOUCH_CS 5 // Chip select pin (T_CS) of touch screen
+#define TOUCH_CS 33 // Chip select pin (T_CS) of touch screen
 
 #define LOAD_GLCD    // Font 1. Original Adafruit 8 pixel font needs ~1820 bytes in FLASH
 #define LOAD_FONT2   // Font 2. Small 16 pixel high font, needs ~3534 bytes in FLASH, 96 characters
